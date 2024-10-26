@@ -3,9 +3,9 @@ import schedule
 import time
 import threading
 from datetime import datetime
+from data import token, CHAT_ID
 
-bot = telebot.TeleBot('7947545435:AAE5F9sFq0FKiBXHX6W97GeMWOdHlalFjKY')
-CHAT_ID = '-1002209365726'
+bot = telebot.TeleBot(token)
 
 # Функция для отправки сообщения
 def send_message(text):
